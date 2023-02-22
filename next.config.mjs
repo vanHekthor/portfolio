@@ -22,7 +22,7 @@ const config = {
   //   locales: ["en"],
   //   defaultLocale: "en",
   // },
-  assetPrefix: isProd ? '/portfolio/' : '',
+  assetPrefix: isProd ? '/portfolio/' : undefined,
   images: {
     unoptimized: true,
   },
