@@ -6,6 +6,8 @@
  */
 !process.env.SKIP_ENV_VALIDATION && (await import("./src/env.mjs"));
 
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
@@ -19,6 +21,10 @@ const config = {
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
+  },
+  assetPrefix: isProd ? '/portfolio/' : '',
+  images: {
+    unoptimized: true,
   },
 };
 export default config;
