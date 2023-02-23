@@ -5,6 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 const Home: NextPage = () => {
+  const isProd = process.env.NODE_ENV === "production";
   return (
     <>
       <Head>
@@ -22,7 +23,9 @@ const Home: NextPage = () => {
         <div className="w-64 p-4">
           <img
             className="h-auto max-w-full rounded-full border-2 border-[#dddddd] align-middle"
-            src="/images/avatar.png"
+            src={`${
+              isProd ? "/portfolio/images/avatar.png" : "/images/avatar.png"
+            }`}
             alt="picture of Quoc Duong Bui"
           />
         </div>
