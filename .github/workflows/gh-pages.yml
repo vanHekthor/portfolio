@@ -14,6 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Create .env file
+        env:
+          BASE_PATH: ${{ secrets.BASE_PATH }}
+        run: |
+          touch .env
+          echo BASE_PATH=$BASE_PATH >> .env
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -25,6 +32,7 @@ jobs:
           npm i
           npm run build
           npm run export
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

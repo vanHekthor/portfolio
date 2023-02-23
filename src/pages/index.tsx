@@ -5,7 +5,8 @@ import Head from "next/head";
 import Link from "next/link";
 
 const Home: NextPage = () => {
-  const isProd = process.env.NODE_ENV === "production";
+  const basePath =
+    process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
   return (
     <>
       <Head>
@@ -23,9 +24,7 @@ const Home: NextPage = () => {
         <div className="w-64 p-4">
           <img
             className="h-auto max-w-full rounded-full border-2 border-[#dddddd] align-middle"
-            src={`${
-              isProd ? "/portfolio/images/avatar.png" : "/images/avatar.png"
-            }`}
+            src={`${basePath}/images/avatar.png`}
             alt="picture of Quoc Duong Bui"
           />
         </div>
