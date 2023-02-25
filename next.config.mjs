@@ -23,7 +23,7 @@ const config = {
   //   defaultLocale: "en",
   // },
   basePath: basePath,
-  // assetPrefix: basePath,
+  assetPrefix: basePath,
   images: {
     unoptimized: true,
   },
