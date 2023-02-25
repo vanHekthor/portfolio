@@ -1,12 +1,14 @@
-/* eslint-disable @next/next/no-img-element */
 import { Button } from "antd";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
+import avatarPic from "../../public/images/avatar.png";
 
-const basePath =
-  process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
 const Home: NextPage = () => {
+  const basePath =
+    process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
+  console.log(basePath);
   return (
     <>
       <Head>
@@ -16,16 +18,18 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center bg-gradient-to-b from-white to-[#dddddd]">
         <div className="text-md flex w-full justify-center space-x-4 bg-white py-2 font-semibold tracking-tight text-slate-700">
-          <Link className="underline" href={"/"}>
+          <a className="underline" href={"/lala"}>
             Resume
-          </Link>
+          </a>
           <Link href={"/projects"}>Projects</Link>
         </div>
         <div className="w-64 p-4">
-          <img
+          <Image
             className="h-auto max-w-full rounded-full border-2 border-[#dddddd] align-middle"
-            src={`${basePath}/images/avatar.png`}
+            src={avatarPic}
             alt="picture of Quoc Duong Bui"
+            width={256}
+            height={256}
           />
         </div>
         <div className="text-3xl font-bold tracking-tight">Quoc Duong Bui</div>
