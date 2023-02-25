@@ -2,7 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import avatarPic from "../../public/images/avatar.png";
+import avatarPic from "../../staticData/images/avatar.png";
 
 const Home: NextPage = () => {
   return (
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
           <div className="space-y-4 tracking-tight">
             <h2 className="text-xl font-semibold">Work Experience</h2>
             <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">05/2020 - present</div>
+              <div className="col-span-2 row-span-full">05/2022 - present</div>
               <div className="col-span-10 font-semibold">
                 Software Engineer, Canida
               </div>

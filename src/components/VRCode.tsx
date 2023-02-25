@@ -1,11 +1,8 @@
 import Image from "next/image";
 import { type FC } from "react";
-import vrCodePic01 from "../../public/images/01.png";
-import vrCodePic02 from "../../public/images/02.png";
-import vrCodePic03 from "../../public/images/03.png";
-
-const basePath =
-  process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
+import vrCodePic01 from "../../staticData/images/01.png";
+import vrCodePic02 from "../../staticData/images/02.png";
+import vrCodePic03 from "../../staticData/images/03.png";
 
 const VRCode: FC = () => {
   return (
