@@ -4,9 +4,6 @@ import Link from "next/link";
 import { FC, useState } from "react";
 import VRCode from "~/components/VRCode";
 
-const basePath =
-  process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
-
 type ProjectProps = {
   name: "VRCode" | "DemiGlace" | "systainable" | "GLIMPS" | undefined;
 };

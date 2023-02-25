@@ -1,4 +1,3 @@
-import { Button } from "antd";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -6,9 +5,6 @@ import Link from "next/link";
 import avatarPic from "../../public/images/avatar.png";
 
 const Home: NextPage = () => {
-  const basePath =
-    process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
-  console.log(basePath);
   return (
     <>
       <Head>
