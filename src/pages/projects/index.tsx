@@ -36,7 +36,7 @@ const Projects: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center bg-black">
         <div className="text-md flex w-full justify-center space-x-4 bg-white py-2 font-semibold tracking-tight text-slate-700">
-          <Link href={`${basePath}`}>Resume</Link>
+          <Link href={`/`}>Resume</Link>
           <Link className="underline" href={"/projects"}>
             Projects
           </Link>

@@ -22,7 +22,8 @@ const config = {
   //   locales: ["en"],
   //   defaultLocale: "en",
   // },
-  assetPrefix: basePath,
+  basePath: basePath,
+  // assetPrefix: basePath,
   images: {
     unoptimized: true,
   },
