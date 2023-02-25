@@ -6,7 +6,7 @@
  */
 !process.env.SKIP_ENV_VALIDATION && (await import("./src/env.mjs"));
 
-const isProd = process.env.NODE_ENV === 'production';
+const basePath = process.env.BASE_PATH ?? "";
 
 /** @type {import("next").NextConfig} */
 const config = {
@@ -22,7 +22,7 @@ const config = {
   //   locales: ["en"],
   //   defaultLocale: "en",
   // },
-  assetPrefix: isProd ? '/portfolio/' : undefined,
+  assetPrefix: basePath,
   images: {
     unoptimized: true,
   },
