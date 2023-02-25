@@ -1,8 +1,10 @@
 import { GithubOutlined } from "@ant-design/icons";
 import { type FC } from "react";
 
+const basePath =
+  process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
+
 const VRCode: FC = () => {
-  const basePath = process.env.BASE_PATH ?? "";
   return (
     <div className="space-y-10 py-10 text-white sm:py-14 md:py-16 lg:py-24">
       <div className="mb-16 flex justify-center text-center">
