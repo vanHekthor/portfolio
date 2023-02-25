@@ -4,9 +4,9 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 
+const basePath =
+  process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
 const Home: NextPage = () => {
-  const basePath =
-    process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
   return (
     <>
       <Head>
