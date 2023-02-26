@@ -1,8 +1,11 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
-import { FC, useState } from "react";
+import { type FC, useState } from "react";
+import DemiGlace from "~/components/DemiGlace";
 import VRCode from "~/components/VRCode";
+import demiglaceLogo from "../../../staticData/images/demiglace_logo.png";
 
 type ProjectProps = {
   name: "VRCode" | "DemiGlace" | "systainable" | "GLIMPS" | undefined;
@@ -12,6 +15,8 @@ const Project: FC<ProjectProps> = ({ name }) => {
   switch (name) {
     case "VRCode":
       return <VRCode />;
+    case "DemiGlace":
+      return <DemiGlace />;
   }
   return (
     <>
@@ -38,9 +43,9 @@ const Projects: NextPage = () => {
             Projects
           </Link>
         </div>
-        <div className="text-md flex w-full justify-center space-x-6 bg-white py-4 font-semibold tracking-tight text-slate-700">
+        <div className="text-md flex w-full justify-center space-x-6 bg-white py-4 font-semibold tracking-tight text-black">
           <button
-            className="flex h-16 w-16 items-end rounded-sm border-2 border-slate-700 p-[0.2rem] text-start font-extrabold uppercase leading-none tracking-tight"
+            className="flex h-16 w-16 items-end rounded-sm border-2 border-black p-[0.2rem] text-start font-extrabold uppercase leading-none tracking-tight"
             onClick={() => {
               setDisplayedProject("VRCode");
             }}
@@ -48,12 +53,12 @@ const Projects: NextPage = () => {
             VR CODE
           </button>
           <button
-            className="flex h-16 w-16 items-center rounded-sm border-2 border-slate-700 text-center uppercase"
+            className="flex items-center rounded-sm border-slate-700 text-center uppercase"
             onClick={() => {
               setDisplayedProject("DemiGlace");
             }}
           >
-            DEMI GLACE
+            <Image src={demiglaceLogo} height={64} alt="" />
           </button>
           <button
             className="flex h-16 w-16 items-center break-all rounded-sm border-2 border-slate-700 text-center uppercase"
