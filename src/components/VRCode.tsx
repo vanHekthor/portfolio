@@ -1,4 +1,6 @@
+import { GithubOutlined } from "@ant-design/icons";
 import Image from "next/image";
+import Link from "next/link";
 import { type FC } from "react";
 import vrCodePic01 from "../../staticData/images/01.png";
 import vrCodePic02 from "../../staticData/images/02.png";
@@ -12,7 +14,7 @@ const VRCode: FC = () => {
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
             VRCode
           </h1>
-          <div className="w-full px-8 text-center text-lg font-medium text-zinc-400 sm:text-xl md:w-[768px] md:text-2xl xl:text-3xl">
+          <div className="w-full px-8 text-center text-lg font-medium text-zinc-400 sm:text-xl md:max-w-screen-md md:text-2xl xl:text-3xl">
             is a prototype VR software debugging environment - containing
             interactive software analysis tools for control flow, data flow,
             internal software components and properties (performance, energy
@@ -27,7 +29,7 @@ const VRCode: FC = () => {
         <h1 className="px-12 text-3xl font-bold tracking-tight sm:text-4xl">
           Follow the flow. Expore hotspots.
         </h1>
-        <div className="w-full px-12 text-start text-lg font-medium text-zinc-400 md:w-[768px] md:text-xl lg:text-2xl">
+        <div className="w-full px-12 text-start text-lg font-medium text-zinc-400 md:max-w-screen-md md:text-xl lg:text-2xl">
           Explore the control and data flows from program start to hotspot and
           vice versa. Compare execution paths between different program
           configurations.
@@ -44,7 +46,7 @@ const VRCode: FC = () => {
         <h1 className="px-12 text-3xl font-bold tracking-tight">
           Laser and gesture control.
         </h1>
-        <div className="w-full px-12 text-start text-lg font-medium text-zinc-400 md:w-[768px] md:text-xl lg:text-2xl">
+        <div className="w-full px-12 text-start text-lg font-medium text-zinc-400 md:max-w-screen-md md:text-xl lg:text-2xl">
           Intuively manipulate windows with gestures.
           <br />
           Maintain a fine-grained control using the laser pointer.
@@ -85,6 +87,14 @@ const VRCode: FC = () => {
           <Image src={vrCodePic03} alt="picture showing Code City in VRCode" />
           <div className="absolute bottom-0 top-0 w-full shadow-[inset_0_0_30px_20px_black] sm:shadow-[inset_0_0_40px_27px_black] md:shadow-[inset_0_0_50px_34px_black] lg:shadow-[inset_0_0_60px_40px_black] xl:shadow-[inset_0_0_95px_62px_black]" />
         </div>
+      </div>
+      <div className="flex justify-center text-center">
+        <Link
+          className="flex gap-x-3 text-4xl font-bold tracking-tight hover:text-zinc-200 sm:text-4xl"
+          href={"https://github.com/vanHekthor/VRCode"}
+        >
+          GitHub <GithubOutlined />
+        </Link>
       </div>
     </div>
   );
