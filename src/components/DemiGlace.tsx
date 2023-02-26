@@ -80,9 +80,12 @@ const DemiGlace: FC = () => {
           </h1>
           <div className="w-full px-12 text-start text-lg font-medium text-zinc-500 md:w-[768px] md:text-xl lg:text-2xl">
             DemiGlace requires a call tree xml and the path to the actual source
-            code. After inputting those, it visits each tree node and finds the
-            exact locations of the respective method calls and the method
-            definitions. Effectively an{" "}
+            code. After inputting those, it visits each tree node and finds the{" "}
+            <span className="font-bold tracking-tight text-black">
+              exact locations
+            </span>{" "}
+            of the respective method calls and the method definitions.
+            Effectively an{" "}
             <span className="font-bold tracking-tight text-black">
               execution graph
             </span>{" "}
