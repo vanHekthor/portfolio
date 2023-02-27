@@ -57,20 +57,20 @@ const Projects: NextPage = () => {
             VR CODE
           </button>
           <button
-            className="flex items-center rounded-sm border-slate-700 text-center uppercase"
-            onClick={() => {
-              setDisplayedProject("DemiGlace");
-            }}
-          >
-            <Image src={demiglaceLogo} height={64} alt="" />
-          </button>
-          <button
             className="flex items-center break-all text-center uppercase"
             onClick={() => {
               setDisplayedProject("systainable");
             }}
           >
-            <Image src={systainableLogo} height={64} alt="" />
+            <Image src={systainableLogo} height={64} alt="systainable logo" />
+          </button>
+          <button
+            className="flex items-center rounded-sm border-slate-700 text-center uppercase"
+            onClick={() => {
+              setDisplayedProject("DemiGlace");
+            }}
+          >
+            <Image src={demiglaceLogo} height={64} alt="DemiGlace logo" />
           </button>
           <button
             className="m-auto flex h-12 w-16 items-center justify-center rounded-md border-2 border-black font-bold uppercase tracking-tighter"

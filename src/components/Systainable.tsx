@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { type FC } from "react";
 import systainableOverview from "../../staticData/images/systainable.png";
+import systainableConfigs from "../../staticData/images/systainable_configs.png";
+import systainableProperties from "../../staticData/images/systainable_properties.png";
+import systainableAnalysis from "../../staticData/images/systainable_analysis.png";
+import systainableOptimization from "../../staticData/images/systainable_optimization.png";
 
 const Systainable: FC = () => {
   return (
@@ -27,48 +31,51 @@ const Systainable: FC = () => {
             alt="picture displaying gesture control in VRCode"
           />
         </div>
-        <div className="space-y-4">
-          <h1 className="px-12 text-3xl font-bold tracking-tight">
-            Motivation.
+        <div className="space-y-4 px-8 sm:px-12">
+          <h1 className="text-3xl font-bold tracking-tight">
+            Create configurations. Compare properties.
           </h1>
-          <div className="w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
-            As a research assistant, I once had the task to match{" "}
-            <span className="font-bold tracking-tight text-black">nodes</span>{" "}
-            of JProfiler call trees to their corresponding{" "}
-            <span className="font-bold tracking-tight text-black">
-              method definitions
-            </span>{" "}
-            and{" "}
-            <span className="font-bold tracking-tight text-black">calls</span>.
-            Here is a simplified example of how the call tree xml for a code
-            snippet may look like:
-          </div>
-          <div className="w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
-            JProfiler is able to record the line number of method calls - if
-            configured to do so. This would have made my task comparatively
-            easy. Unfortunately, all measurements (hundreds of hours of
-            profiling) were already done before realizing that the necessary
-            option for recording line numbers was turned off.
+          <div className="w-full text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
+            Import or manually add multiple configurations. Get a quick overview
+            of each configuration&apos;s effect on the software properties.
           </div>
         </div>
-        <div className="space-y-4">
-          <h1 className="px-12 text-3xl font-bold tracking-tight">
-            Current state.
+        <div className="space-y-4 px-8 sm:px-12">
+          <Image
+            src={systainableConfigs}
+            alt="configuration view in systainable"
+          />
+          <Image
+            src={systainableProperties}
+            alt="property value view in systainable"
+          />
+        </div>
+        <div className="space-y-4 px-8 sm:px-12">
+          <h1 className="text-3xl font-bold tracking-tight">
+            In-depth influence analysis.
           </h1>
-          <div className="mx-0 w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
-            DemiGlace requires a call tree xml and the path to the actual source
-            code. After inputting those, it visits each tree node and finds the{" "}
-            <span className="font-bold tracking-tight text-black">
-              exact locations
-            </span>{" "}
-            of the respective method calls and the method definitions. An{" "}
-            <span className="font-bold tracking-tight text-black">
-              execution graph
-            </span>{" "}
-            gets generated which contains the in-source-code positions of each
-            call with the corresponding definition - method are the nodes, calls
-            are the edges.
+          <div className="w-full text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
+            Check the effect of each configuration option and interaction
+            between options on the overall performance of a software system.
           </div>
+        </div>
+        <div className="space-y-4 px-8 sm:px-12">
+          <Image src={systainableAnalysis} alt="analysis view in systainable" />
+        </div>
+        <div className="space-y-4 px-8 sm:px-12">
+          <h1 className="text-3xl font-bold tracking-tight">
+            Optimize configurations.
+          </h1>
+          <div className="w-full text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
+            Refine a configuration using the optimization feature. Check out the
+            improvements in the optimized config preview.
+          </div>
+        </div>
+        <div className="space-y-4 px-8 sm:px-12">
+          <Image
+            src={systainableOptimization}
+            alt="analysis view in systainable"
+          />
         </div>
         <div className="flex justify-center text-center">
           <Link
