@@ -4,8 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { type FC, useState } from "react";
 import DemiGlace from "~/components/DemiGlace";
+import Systainable from "~/components/Systainable";
 import VRCode from "~/components/VRCode";
 import demiglaceLogo from "../../../staticData/images/demiglace_logo.png";
+import systainableLogo from "../../../staticData/images/systainable_logo.png";
 
 type ProjectProps = {
   name: "VRCode" | "DemiGlace" | "systainable" | "GLIMPS" | undefined;
@@ -17,6 +19,8 @@ const Project: FC<ProjectProps> = ({ name }) => {
       return <VRCode />;
     case "DemiGlace":
       return <DemiGlace />;
+    case "systainable":
+      return <Systainable />;
   }
   return (
     <>
@@ -61,15 +65,15 @@ const Projects: NextPage = () => {
             <Image src={demiglaceLogo} height={64} alt="" />
           </button>
           <button
-            className="flex h-16 w-16 items-center break-all rounded-sm border-2 border-slate-700 text-center uppercase"
+            className="flex items-center break-all text-center uppercase"
             onClick={() => {
               setDisplayedProject("systainable");
             }}
           >
-            systainable
+            <Image src={systainableLogo} height={64} alt="" />
           </button>
           <button
-            className="flex h-16 w-16 items-center justify-center rounded-sm border-2 border-slate-700 uppercase"
+            className="m-auto flex h-12 w-16 items-center justify-center rounded-md border-2 border-black font-bold uppercase tracking-tighter"
             onClick={() => {
               setDisplayedProject("GLIMPS");
             }}
