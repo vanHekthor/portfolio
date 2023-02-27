@@ -74,7 +74,7 @@ const Systainable: FC = () => {
         <div className="space-y-4 px-8 sm:px-12">
           <Image
             src={systainableOptimization}
-            alt="analysis view in systainable"
+            alt="optimization modal in systainable"
           />
         </div>
         <div className="flex justify-center text-center">
