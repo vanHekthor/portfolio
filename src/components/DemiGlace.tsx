@@ -52,10 +52,10 @@ const DemiGlace: FC = () => {
           />
         </div>
         <div className="space-y-4">
-          <h1 className="px-12 text-3xl font-bold tracking-tight">
+          <h1 className="px-12 text-3xl font-bold tracking-tight sm:text-4xl">
             Motivation.
           </h1>
-          <div className="w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
+          <div className="w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-lg md:text-xl lg:text-2xl">
             As a research assistant, I once had the task to match{" "}
             <span className="font-bold tracking-tight text-black">nodes</span>{" "}
             of JProfiler call trees to their corresponding{" "}
@@ -75,7 +75,7 @@ const DemiGlace: FC = () => {
               {callTree}
             </ReactMarkdown>
           </article>
-          <div className="w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
+          <div className="w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-lg md:text-xl lg:text-2xl">
             JProfiler is able to record the line number of method calls - if
             configured to do so. This would have made my task comparatively
             easy. Unfortunately, all measurements (hundreds of hours of
@@ -84,8 +84,10 @@ const DemiGlace: FC = () => {
           </div>
         </div>
         <div className="space-y-4">
-          <h1 className="px-12 text-3xl font-bold tracking-tight">Solution.</h1>
-          <div className="mx-0 w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
+          <h1 className="px-12 text-3xl font-bold tracking-tight sm:text-4xl">
+            Solution.
+          </h1>
+          <div className="mx-0 w-full px-12 text-start text-lg font-medium text-zinc-500 md:max-w-screen-lg md:text-xl lg:text-2xl">
             DemiGlace takes a call tree xml and the path to the actual source
             code. It visits each call tree node and finds the{" "}
             <span className="font-bold tracking-tight text-black">
