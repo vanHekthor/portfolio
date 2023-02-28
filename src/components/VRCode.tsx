@@ -43,7 +43,7 @@ const VRCode: FC = () => {
         <div className="absolute bottom-0 top-0 w-full shadow-[inset_0_0_30px_20px_black] sm:shadow-[inset_0_0_40px_27px_black] md:shadow-[inset_0_0_50px_34px_black] lg:shadow-[inset_0_0_60px_40px_black] xl:shadow-[inset_0_0_95px_62px_black]" />
       </div>
       <div className="space-y-4">
-        <h1 className="px-12 text-3xl font-bold tracking-tight">
+        <h1 className="px-12 text-3xl font-bold tracking-tight sm:text-4xl">
           Laser and gesture control.
         </h1>
         <div className="w-full px-12 text-start text-lg font-medium text-zinc-400 md:max-w-screen-md md:text-xl lg:text-2xl">
