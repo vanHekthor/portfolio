@@ -32,7 +32,7 @@ const Systainable: FC = () => {
           />
         </div>
         <div className="space-y-4 px-8 sm:px-12">
-          <h1 className="text-3xl font-bold tracking-tight">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Create configurations. Compare properties.
           </h1>
           <div className="w-full text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
@@ -51,7 +51,7 @@ const Systainable: FC = () => {
           />
         </div>
         <div className="space-y-4 px-8 sm:px-12">
-          <h1 className="text-3xl font-bold tracking-tight">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
             In-depth influence analysis.
           </h1>
           <div className="w-full text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
@@ -63,7 +63,7 @@ const Systainable: FC = () => {
           <Image src={systainableAnalysis} alt="analysis view in systainable" />
         </div>
         <div className="space-y-4 px-8 sm:px-12">
-          <h1 className="text-3xl font-bold tracking-tight">
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Optimize configurations.
           </h1>
           <div className="w-full text-start text-lg font-medium text-zinc-500 md:max-w-screen-md md:text-xl lg:text-2xl">
