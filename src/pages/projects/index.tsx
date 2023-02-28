@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { type FC, useState } from "react";
 import DemiGlace from "~/components/DemiGlace";
+import Glimps from "~/components/Glimps";
 import Systainable from "~/components/Systainable";
 import VRCode from "~/components/VRCode";
 import demiglaceLogo from "../../../staticData/images/demiglace_logo.png";
@@ -21,10 +22,12 @@ const Project: FC<ProjectProps> = ({ name }) => {
       return <DemiGlace />;
     case "systainable":
       return <Systainable />;
+    case "GLIMPS":
+      return <Glimps />;
   }
   return (
     <>
-      <div className="text-white">{name}</div>
+      <div className="text-white">{name} not found</div>
     </>
   );
 };

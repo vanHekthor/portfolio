@@ -114,8 +114,8 @@ const Home: NextPage = () => {
               <div className="col-span-11 col-start-3">
                 <ul className="list-disc pl-5">
                   <li>
-                    GPA 1.4 (Germany), thesis: “SoftVR: Finding Energy Bugs in
-                    Configurable Software Systems”
+                    thesis: “SoftVR: Finding Energy Bugs in Configurable
+                    Software Systems”
                   </li>
                   <li>
                     Framework development as well as design and execution of a
@@ -135,8 +135,8 @@ const Home: NextPage = () => {
               <div className="col-span-11 col-start-3">
                 <ul className="list-disc pl-5">
                   <li>
-                    GPA 1.5 (Germany), thesis: “Smart Teaching and Learning –
-                    Apps for Teaching Instruments”
+                    thesis: “Smart Teaching and Learning – Apps for Teaching
+                    Instruments”
                   </li>
                   <li>Additional major in singing</li>
                 </ul>
