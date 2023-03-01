@@ -2,9 +2,9 @@ import { GithubOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { type FC } from "react";
-import vrCodePic01 from "../../staticData/images/01.png";
-import vrCodePic02 from "../../staticData/images/02.png";
-import vrCodePic03 from "../../staticData/images/03.png";
+import vrCodePic01 from "../../../staticData/images/01.png";
+import vrCodePic02 from "../../../staticData/images/02.png";
+import vrCodePic03 from "../../../staticData/images/03.png";
 
 const VRCode: FC = () => {
   return (

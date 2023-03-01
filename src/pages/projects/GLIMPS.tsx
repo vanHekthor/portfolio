@@ -2,9 +2,9 @@ import { GithubOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { type FC } from "react";
-import glimpsOverview from "../../staticData/images/glimps_overview.png";
-import glimpsHotspotDiff from "../../staticData/images/glimps_hotspot_diff.png";
-import glimpsTrace from "../../staticData/images/glimps_trace.png";
+import glimpsOverview from "../../../staticData/images/glimps_overview.png";
+import glimpsHotspotDiff from "../../../staticData/images/glimps_hotspot_diff.png";
+import glimpsTrace from "../../../staticData/images/glimps_trace.png";
 
 const Glimps: FC = () => {
   return (

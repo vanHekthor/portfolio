@@ -2,11 +2,11 @@ import { GithubOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { type FC } from "react";
-import systainableOverview from "../../staticData/images/systainable.png";
-import systainableConfigs from "../../staticData/images/systainable_configs.png";
-import systainableProperties from "../../staticData/images/systainable_properties.png";
-import systainableAnalysis from "../../staticData/images/systainable_analysis.png";
-import systainableOptimization from "../../staticData/images/systainable_optimization.png";
+import systainableOverview from "../../../staticData/images/systainable.png";
+import systainableConfigs from "../../../staticData/images/systainable_configs.png";
+import systainableProperties from "../../../staticData/images/systainable_properties.png";
+import systainableAnalysis from "../../../staticData/images/systainable_analysis.png";
+import systainableOptimization from "../../../staticData/images/systainable_optimization.png";
 
 const Systainable: FC = () => {
   return (

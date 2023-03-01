@@ -3,7 +3,7 @@ import { type FC } from "react";
 import ReactMarkdown from "react-markdown";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import rehypePrism from "@mapbox/rehype-prism";
-import demiGlaceSchema from "../../staticData/images/demiglace_schema.png";
+import demiGlaceSchema from "../../../staticData/images/demiglace_schema.png";
 import { GithubOutlined } from "@ant-design/icons";
 import Link from "next/link";
 
