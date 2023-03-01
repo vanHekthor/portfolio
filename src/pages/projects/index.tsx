@@ -23,7 +23,7 @@ const Projects: NextPage = () => {
         <div className="flex w-full justify-center py-16 text-center text-black">
           <div>
             <h1 className="mb-4 text-5xl font-bold tracking-tight">VRCode</h1>
-            <h2 className="mb-12 text-3xl font-bold tracking-tight">
+            <h2 className="mb-12 px-8 text-3xl font-bold tracking-tight">
               Virtual Reality Development Environment
             </h2>
             <div className="m-auto mb-12 flex h-32 w-32 items-end rounded-sm border-2 border-black bg-white p-2 text-start text-3xl font-extrabold uppercase leading-none tracking-tight text-black">
@@ -41,7 +41,7 @@ const Projects: NextPage = () => {
             <h1 className="mb-4 text-5xl font-bold tracking-tight">
               systainable
             </h1>
-            <h2 className="mb-12 text-3xl font-bold tracking-tight">
+            <h2 className="mb-12 px-8 text-3xl font-bold tracking-tight">
               Green Configuration Dashboard
             </h2>
             <Image
@@ -61,7 +61,7 @@ const Projects: NextPage = () => {
             <h1 className="mb-4 text-5xl font-bold tracking-tight">
               DemiGlace
             </h1>
-            <h2 className="mb-12 text-3xl font-bold tracking-tight">
+            <h2 className="mb-12 px-8 text-3xl font-bold tracking-tight">
               Java Parsing Tool
             </h2>
             <Image
@@ -79,7 +79,7 @@ const Projects: NextPage = () => {
         <div className="flex w-full justify-center bg-black py-16 text-center text-white">
           <div>
             <h1 className="mb-4 text-5xl font-bold tracking-tight">GLIMPS</h1>
-            <h2 className="mb-12 text-3xl font-bold tracking-tight">
+            <h2 className="mb-12 px-8 text-3xl font-bold tracking-tight">
               Reproduction of a Performance Debugging Tool
             </h2>
             <div className="m-auto mb-12 flex h-24 w-32 items-center justify-center rounded-md border-2 border-white text-3xl font-bold uppercase tracking-tighter">

@@ -44,7 +44,7 @@ const Home: NextPage = () => {
             <GithubFilled className="hover:text-zinc-600" />
           </Link>
         </div>
-        <div className="w-full max-w-screen-lg space-y-8 px-4 pt-8 pb-20">
+        <div className="w-full max-w-screen-lg space-y-8 px-8 pt-8 pb-20">
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold">Projects</h2>
             <div className="overflow-auto">
