@@ -24,7 +24,7 @@ const ProjectsLayout: FC<ProjectsLayoutProps> = ({ children }) => {
             Projects
           </Link>
         </div>
-        <div className="text-md flex w-full justify-center space-x-6 bg-white py-4 font-semibold tracking-tight text-black">
+        <div className="text-md flex w-full justify-center space-x-4 bg-white p-4 font-semibold tracking-tight text-black xs:space-x-6 sm:space-x-8 md:space-x-12">
           <Link
             href={`/projects/VRCode`}
             className="flex h-16 w-16 items-end rounded-sm border-2 border-black p-[0.2rem] text-start font-extrabold uppercase leading-none tracking-tight"
@@ -33,13 +33,13 @@ const ProjectsLayout: FC<ProjectsLayoutProps> = ({ children }) => {
           </Link>
           <Link
             href={`/projects/systainable`}
-            className="flex items-center break-all text-center uppercase"
+            className="flex min-w-[64px] items-center break-all text-center uppercase"
           >
             <Image src={systainableLogo} height={64} alt="systainable logo" />
           </Link>
           <Link
             href={`/projects/DemiGlace`}
-            className="flex items-center rounded-sm border-slate-700 text-center uppercase"
+            className="flex min-w-[64px] items-center rounded-sm border-slate-700 text-center uppercase"
           >
             <Image src={demiglaceLogo} height={64} alt="DemiGlace logo" />
           </Link>
