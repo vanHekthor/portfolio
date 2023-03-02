@@ -24,7 +24,7 @@ const SectionEntry: FC<SectionEntryProps> = ({
 
   return (
     <>
-      <div className="col-span-2 row-span-full hidden pr-2 tracking-tight text-zinc-600 md:block">
+      <div className="col-span-2 row-span-full hidden pr-2 tracking-tight md:block">
         {timeSpan}
       </div>
       <div className="col-span-12 font-semibold md:col-span-10">{title}</div>
