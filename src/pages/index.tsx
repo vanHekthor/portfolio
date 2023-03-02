@@ -185,7 +185,7 @@ const Home: NextPage = () => {
             </ResumeSection>
             <ResumeSection cols={12}>
               <SectionEntry
-                timeSpan="05/2022"
+                timeSpan="03/2022"
                 title={
                   <>
                     TRIZ User Level 1{" "}
