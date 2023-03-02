@@ -5,7 +5,14 @@ import Link from "next/link";
 import avatarPic from "../../staticData/images/avatar.png";
 import systainableLogo from "../../staticData/images/systainable_logo.png";
 import demiGlaceLogo from "../../staticData/images/demiglace_logo.png";
-import { GithubFilled, LinkedinFilled, RightOutlined } from "@ant-design/icons";
+import {
+  DownOutlined,
+  GithubFilled,
+  LinkedinFilled,
+  RightOutlined,
+} from "@ant-design/icons";
+import ResumeSection from "~/components/ResumeSection";
+import SectionEntry from "~/components/SectionEntry";
 
 const Home: NextPage = () => {
   return (
@@ -87,61 +94,32 @@ const Home: NextPage = () => {
           </div>
           <div className="space-y-4 tracking-tight">
             <h2 className="text-2xl font-semibold">Work Experience</h2>
-            <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">05/2022 - present</div>
-              <div className="col-span-10 font-semibold">
-                Software Engineer, Canida
-              </div>
-              <div className="col-span-11 col-start-3">
-                <ul className="list-disc pl-5">
-                  <li>
-                    Creation of a company-internal component library (React,
-                    TailwindCSS, Less)
-                  </li>
-                  <li>
-                    Legacy apps to embeddable standalone apps (React,
-                    TypeScript, antd, GraphQL, PostgreSQL), reduction of startup
-                    time from several minutes to few seconds
-                  </li>
-                  <li>
-                    Modernization of build processes (Webpack, Create-React-App,
-                    Vite, Gatsby)
-                  </li>
-                  <li>
-                    UX research: usability, effectiveness, satisfaction
-                    (interview, card sorting, System Usability Scale)
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">05/2021 - 04/2022</div>
-              <div className="col-span-10 font-semibold">
-                Research Assistant, Chair of Software Systems, Leipzig
-                University
-              </div>
-              <div className="col-span-11 col-start-3">
-                <ul className="list-disc pl-5">
-                  <li>
-                    Development of prototype VR software development environment
-                    in Unity (C#) with interactive, visual analysis tools for
-                    software (performance, energy consumption etc.)
-                  </li>
-                  <li>
-                    Visualization of program slices and cross-referencing
-                    between JProfiler snapshots and code
-                  </li>
-                  <li>
-                    Reproduction and containerization of research software
-                    (Docker)
-                  </li>
-                  <li>
-                    User studies: design and execution (acquisition,
-                    quantitative and qualitative analysis)
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <ResumeSection cols={12}>
+              <SectionEntry
+                timeSpan="05/2022 - present"
+                title="Software Engineer, Canida"
+                description={[
+                  "Creation of a company-internal component library (React, TailwindCSS, Less)",
+                  "Legacy apps to embeddable standalone apps (React, TypeScript, antd, GraphQL, PostgreSQL), reduction of startup time from several minutes to few seconds",
+                  "Modernization of build processes (Webpack, Create-React-App, Vite, Gatsby)",
+                  "UX research: usability, effectiveness, satisfaction (interview, card sorting, System Usability Scale)",
+                ]}
+                rowClamp="2"
+              />
+            </ResumeSection>
+            <ResumeSection cols={12}>
+              <SectionEntry
+                timeSpan="05/2021 - 04/2022"
+                title="Research Assistant, Chair of Software Systems, Leipzig University"
+                description={[
+                  "Development of prototype VR software development environment in Unity (C#) with interactive, visual analysis tools for software (performance, energy consumption etc.)",
+                  "Visualization of program slices and cross-referencing between JProfiler snapshots and code",
+                  "Reproduction and containerization of research software (Docker)",
+                  "User studies: design and execution (acquisition, quantitative and qualitative analysis)",
+                ]}
+                rowClamp="2"
+              />
+            </ResumeSection>
             <div className="grid grid-cols-12">
               <div className="col-span-2 row-span-full">04/2016 - 04/2018</div>
               <div className="col-span-10 font-semibold">
