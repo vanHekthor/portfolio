@@ -33,8 +33,10 @@ const SectionEntry: FC<SectionEntryProps> = ({
       </div>
       <div className="col-span-12 md:col-span-10 md:col-start-3">
         <ul
-          className={`list-disc pl-5 text-base line-clamp-${
-            hasTooMuchItems && !showFullDescription ? rowClamp : "none"
+          className={`list-disc pl-5 text-base ${
+            hasTooMuchItems && !showFullDescription
+              ? `line-clamp-${rowClamp} h-[3rem]`
+              : "h-fit line-clamp-none"
           }`}
         >
           {description.map((item, index) => (

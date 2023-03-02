@@ -13,6 +13,14 @@
   -webkit-line-clamp: unset;
 }
 
+.h-fit {
+  height: fit-content;
+}
+
+.h-\[3rem\] {
+  height: 3rem/* 48px */;
+}
+
 pre[class*="language-"],
 code[class*="language-"] {
 	color: #d4d4d4;
