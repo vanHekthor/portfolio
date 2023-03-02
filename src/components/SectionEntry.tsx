@@ -24,9 +24,14 @@ const SectionEntry: FC<SectionEntryProps> = ({
 
   return (
     <>
-      <div className="col-span-2 row-span-full">{timeSpan}</div>
-      <div className="col-span-10 font-semibold">{title}</div>
-      <div className="col-span-10 col-start-3">
+      <div className="col-span-2 row-span-full hidden px-2 tracking-tight text-zinc-600 md:block">
+        {timeSpan}
+      </div>
+      <div className="col-span-12 font-semibold md:col-span-10">{title}</div>
+      <div className="col-span-12 mb-2 text-zinc-500 md:col-span-10 md:hidden">
+        {timeSpan}
+      </div>
+      <div className="col-span-12 md:col-span-10 md:col-start-3">
         <ul
           className={`list-disc pl-5 line-clamp-${
             hasTooMuchItems && !showFullDescription ? rowClamp : "none"
@@ -37,7 +42,7 @@ const SectionEntry: FC<SectionEntryProps> = ({
           ))}
         </ul>
         {description.length > parseRowClamp(rowClamp) && (
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-end md:justify-start">
             <button
               className="flex items-center space-x-1 font-semibold text-zinc-500"
               onClick={() => setShowFullDescription(!showFullDescription)}
