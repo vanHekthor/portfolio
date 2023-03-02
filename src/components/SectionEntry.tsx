@@ -37,7 +37,7 @@ const SectionEntry: FC<SectionEntryProps> = ({
           ))}
         </ul>
         {description.length > parseRowClamp(rowClamp) && (
-          <div className="flex justify-start">
+          <div className="flex justify-center lg:justify-start">
             <button
               className="flex items-center space-x-1 font-semibold text-zinc-500"
               onClick={() => setShowFullDescription(!showFullDescription)}

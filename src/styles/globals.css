@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-none {
+  -webkit-line-clamp: unset;
+}
+
 pre[class*="language-"],
 code[class*="language-"] {
 	color: #d4d4d4;
