@@ -24,9 +24,9 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center bg-white">
         <div className="text-md flex w-full justify-center space-x-4 bg-white py-2 font-semibold tracking-tight text-slate-700">
-          <a className="underline" href={"/lala"}>
+          <Link className="underline" href={"/"}>
             Resume
-          </a>
+          </Link>
           <Link href={"/projects"}>Projects</Link>
         </div>
         <div className="w-64 p-4">
