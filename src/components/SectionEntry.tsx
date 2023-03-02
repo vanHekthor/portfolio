@@ -3,7 +3,7 @@ import { useState, type FC } from "react";
 
 export type SectionEntryProps = {
   timeSpan: string;
-  title: string;
+  title: React.ReactNode;
   description: string[];
   rowClamp: string;
 };

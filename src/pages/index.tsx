@@ -120,91 +120,100 @@ const Home: NextPage = () => {
                 rowClamp="2"
               />
             </ResumeSection>
-            <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">04/2016 - 04/2018</div>
-              <div className="col-span-10 font-semibold">
-                Piano Teacher, Music School Conrad Boenigk, Soest
-              </div>
-              <div className="col-span-11 col-start-3">
-                <ul className="list-disc pl-5">
-                  <li>
-                    One-to-one lessons for piano students of various age groups
-                    (6-58)
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <ResumeSection cols={12}>
+              <SectionEntry
+                timeSpan="04/2016 - 04/2018"
+                title="Piano Teacher, Music School Conrad Boenigk, Soest"
+                description={[
+                  "One-to-one lessons for piano students of various age groups (6-58)",
+                ]}
+                rowClamp="2"
+              />
+            </ResumeSection>
           </div>
           <div className="space-y-4 tracking-tight">
             <h2 className="text-2xl font-semibold">Education</h2>
-            <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">10/2020 - 10/2022</div>
-              <div className="col-span-10">
-                <span className="font-semibold">Leipzig University</span> BSc
-                Computer Science
-              </div>
-              <div className="col-span-11 col-start-3">
-                <ul className="list-disc pl-5">
-                  <li>
-                    thesis: “SoftVR: Finding Energy Bugs in Configurable
-                    Software Systems”
-                  </li>
-                  <li>
-                    Framework development as well as design and execution of a
-                    comparative user study
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">10/2015 - 09/2020</div>
-              <div className="col-span-10">
-                <span className="font-semibold">
-                  Detmold University of Music
-                </span>{" "}
-                BMus Piano and Instrumental Pedagogy
-              </div>
-              <div className="col-span-11 col-start-3">
-                <ul className="list-disc pl-5">
-                  <li>
-                    thesis: “Smart Teaching and Learning – Apps for Teaching
-                    Instruments”
-                  </li>
-                  <li>Additional major in singing</li>
-                </ul>
-              </div>
-            </div>
+            <ResumeSection cols={12}>
+              <SectionEntry
+                timeSpan="10/2020 - 10/2022"
+                title={
+                  <>
+                    Leipzig University{" "}
+                    <span className="!font-normal">BSc Computer Science</span>
+                  </>
+                }
+                description={[
+                  "thesis: “SoftVR: Finding Energy Bugs in Configurable Software Systems”",
+                  "Framework development as well as design and execution of a comparative user study",
+                ]}
+                rowClamp="2"
+              />
+            </ResumeSection>
+            <ResumeSection cols={12}>
+              <SectionEntry
+                timeSpan="10/2015 - 09/2020"
+                title={
+                  <>
+                    Detmold University of Music{" "}
+                    <span className="!font-normal">
+                      BMus Piano and Instrumental Pedagogy
+                    </span>
+                  </>
+                }
+                description={[
+                  "thesis: “Smart Teaching and Learning – Apps for Teaching Instruments”",
+                  "Additional major in singing",
+                ]}
+                rowClamp="2"
+              />
+            </ResumeSection>
           </div>
           <div className="space-y-4 tracking-tight">
             <h2 className="text-2xl font-semibold">Certificates</h2>
-            <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">05/2022</div>
-              <div className="col-span-10">
-                <span className="font-semibold">
-                  AWS Partner Accreditation{" "}
-                </span>
-                Business
-              </div>
-            </div>
-            <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">03/2022</div>
-              <div className="col-span-10">
-                <span className="font-semibold">TRIZ User Level 1 </span>
-                Theory of Inventive Problem Solving
-              </div>
-            </div>
+            <ResumeSection cols={12}>
+              <SectionEntry
+                timeSpan="05/2022"
+                title={
+                  <>
+                    AWS Partner Accreditation{" "}
+                    <span className="!font-normal">Business</span>
+                  </>
+                }
+                description={[]}
+                rowClamp="2"
+              />
+            </ResumeSection>
+            <ResumeSection cols={12}>
+              <SectionEntry
+                timeSpan="05/2022"
+                title={
+                  <>
+                    TRIZ User Level 1{" "}
+                    <span className="!font-normal">
+                      Theory of Inventive Problem Solving
+                    </span>
+                  </>
+                }
+                description={[]}
+                rowClamp="2"
+              />
+            </ResumeSection>
           </div>
           <div className="space-y-4 tracking-tight">
             <h2 className="text-2xl font-semibold">Skills & Interests</h2>
             <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">Languages</div>
-              <div className="col-span-11 col-start-3">
+              <div className="col-span-12 row-span-full font-semibold sm:col-span-2 sm:font-normal">
+                Languages
+              </div>
+              <div className="col-span-12 sm:col-span-11 sm:col-start-3">
                 German (native), English (C1), Vietnamese (B2)
               </div>
             </div>
             <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">Technologies</div>
-              <div className="col-span-11 col-start-3">
+              <div className="col-span-12 row-span-full font-semibold sm:col-span-2 sm:font-normal">
+                Technologies
+              </div>
+              <div className="col-span-12 sm:col-span-11 sm:col-start-3">
                 TypeScript, JavaScript, React, Vue.js, Tailwind CSS, Ant Design,
                 Less, CSS, Node.js, Next.js, Express, Docker, Unity 3D, C#, C++,
                 Android, Java, Spring, GraphQL, REST API, SQL, HTML, XML,
@@ -212,8 +221,10 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="grid grid-cols-12">
-              <div className="col-span-2 row-span-full">Languages</div>
-              <div className="col-span-11 col-start-3">
+              <div className="col-span-12 row-span-full font-semibold sm:col-span-2 sm:font-normal">
+                Languages
+              </div>
+              <div className="col-span-12 sm:col-span-11 sm:col-start-3">
                 Optical Music Recognition, UX Research, Dancing (Hip Hop),
                 Fermentation, Sourdough Baking
               </div>
