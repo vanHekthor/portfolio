@@ -28,7 +28,7 @@ const SectionEntry: FC<SectionEntryProps> = ({
       <div className="col-span-10 font-semibold">{title}</div>
       <div className="col-span-10 col-start-3">
         <ul
-          className={`line list-disc pl-5 line-clamp-${
+          className={`list-disc pl-5 line-clamp-${
             hasTooMuchItems && !showFullDescription ? rowClamp : "none"
           }`}
         >
