@@ -5,11 +5,7 @@ import Link from "next/link";
 import avatarPic from "../../staticData/images/avatar.png";
 import systainableLogo from "../../staticData/images/systainable_logo.png";
 import demiGlaceLogo from "../../staticData/images/demiglace_logo.png";
-import {
-  GithubFilled,
-  LinkedinFilled,
-  LinkedinOutlined,
-} from "@ant-design/icons";
+import { GithubFilled, LinkedinFilled, RightOutlined } from "@ant-design/icons";
 
 const Home: NextPage = () => {
   return (
@@ -28,7 +24,7 @@ const Home: NextPage = () => {
         </div>
         <div className="w-64 p-4">
           <Image
-            className="h-auto max-w-full rounded-full border-2 border-[#dddddd] align-middle"
+            className="h-auto max-w-full rounded-full border-2 border-zinc-400 align-middle"
             src={avatarPic}
             alt="picture of Quoc Duong Bui"
             width={256}
@@ -46,7 +42,14 @@ const Home: NextPage = () => {
         </div>
         <div className="w-full max-w-screen-lg space-y-8 px-8 pt-8 pb-20">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold">Projects</h2>
+            <Link href="/projects">
+              <div className="group flex items-center space-x-1">
+                <span className="text-2xl font-semibold group-hover:underline">
+                  Projects
+                </span>
+                <RightOutlined className="rounded-fullp-1 flex items-center text-sm" />
+              </div>
+            </Link>
             <div className="overflow-auto">
               <div className="flex min-w-fit max-w-screen-xl items-center justify-evenly">
                 <Link
@@ -210,6 +213,31 @@ const Home: NextPage = () => {
               <div className="col-span-10">
                 <span className="font-semibold">TRIZ User Level 1 </span>
                 Theory of Inventive Problem Solving
+              </div>
+            </div>
+          </div>
+          <div className="space-y-4 tracking-tight">
+            <h2 className="text-2xl font-semibold">Skills & Interests</h2>
+            <div className="grid grid-cols-12">
+              <div className="col-span-2 row-span-full">Languages</div>
+              <div className="col-span-11 col-start-3">
+                German (native), English (C1), Vietnamese (B2)
+              </div>
+            </div>
+            <div className="grid grid-cols-12">
+              <div className="col-span-2 row-span-full">Technologies</div>
+              <div className="col-span-11 col-start-3">
+                TypeScript, JavaScript, React, Vue.js, Tailwind CSS, Ant Design,
+                Less, CSS, Node.js, Next.js, Express, Docker, Unity 3D, C#, C++,
+                Android, Java, Spring, GraphQL, REST API, SQL, HTML, XML,
+                XQuery, JSON
+              </div>
+            </div>
+            <div className="grid grid-cols-12">
+              <div className="col-span-2 row-span-full">Languages</div>
+              <div className="col-span-11 col-start-3">
+                Optical Music Recognition, UX Research, Dancing (Hip Hop),
+                Fermentation, Sourdough Baking
               </div>
             </div>
           </div>
