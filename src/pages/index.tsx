@@ -99,9 +99,9 @@ const Home: NextPage = () => {
                 timeSpan="05/2022 - present"
                 title="Software Engineer, Canida"
                 description={[
-                  "Creation of a company-internal component library (React, TailwindCSS, Less)",
-                  "Legacy apps to embeddable standalone apps (React, TypeScript, antd, GraphQL, PostgreSQL), reduction of startup time from several minutes to few seconds",
+                  "Legacy app modernization, reduction of startup time from several minutes to few seconds (React, TypeScript, antd, GraphQL, PostgreSQL)",
                   "Modernization of build processes (Webpack, Create-React-App, Vite, Gatsby)",
+                  "Creation of a company-internal component library (React, TailwindCSS, Less)",
                   "UX research: usability, effectiveness, satisfaction (interview, card sorting, System Usability Scale)",
                 ]}
                 rowClamp="2"
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
                 title="Research Assistant, Chair of Software Systems, Leipzig University"
                 description={[
                   "Development of prototype VR software development environment in Unity (C#) with interactive, visual analysis tools for software (performance, energy consumption etc.)",
-                  "Visualization of program slices and cross-referencing between JProfiler snapshots and code",
+                  "Visualization of program slices and cross-references between JProfiler snapshots and code",
                   "Reproduction and containerization of research software (Docker)",
                   "User studies: design and execution (acquisition, quantitative and qualitative analysis)",
                 ]}
