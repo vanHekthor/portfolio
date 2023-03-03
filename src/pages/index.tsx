@@ -222,7 +222,7 @@ const Home: NextPage = () => {
             </div>
             <div className="grid grid-cols-12">
               <div className="col-span-12 row-span-full font-semibold sm:col-span-2 sm:font-normal">
-                Languages
+                Interests
               </div>
               <div className="col-span-12 sm:col-span-11 sm:col-start-3">
                 Optical Music Recognition, UX Research, Dancing (Hip Hop),

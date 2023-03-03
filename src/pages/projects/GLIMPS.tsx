@@ -25,8 +25,8 @@ const Glimps: FC = () => {
           Reproduction. Modification. Evaluation.
         </h1>
         <div className="w-full px-12 text-start text-lg font-medium text-zinc-400 md:max-w-screen-lg md:text-xl lg:text-2xl">
-          A known flaw of research software is that it is often hard or even
-          next to impossible to reproduce. In addition, empirical evidence of
+          A common flaw of research software is that its reproduction is often
+          hard or even next to impossible. In addition, empirical evidence of
           the software&apos;s actual usefulness is rare. This project addresses
           both problems by simplifying the reproduction of GLIMPS and evaluating
           the tool in a comparative user study.

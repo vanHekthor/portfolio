@@ -99,8 +99,8 @@ const DemiGlace: FC = () => {
               execution graph
             </span>{" "}
             gets generated which contains the in-source-code positions of each
-            call with the corresponding definition - method are the nodes, calls
-            are the edges.
+            call with the corresponding definition - methods are the nodes,
+            calls are the edges.
           </div>
         </div>
         <div className="flex justify-center text-center">
