@@ -29,8 +29,8 @@ const Projects: NextPage = () => {
             <div className="m-auto mb-12 flex h-32 w-32 items-end rounded-sm border-2 border-black bg-white p-2 text-start text-3xl font-extrabold uppercase leading-none tracking-tight text-black">
               VR CODE
             </div>
-            <Link href={`/projects/VRCode`}>
-              <div className="m-auto w-fit rounded-full bg-emerald-600 py-1 px-3 text-white">
+            <Link className="m-auto flex w-fit" href={`/projects/VRCode`}>
+              <div className="rounded-full bg-emerald-600 py-1 px-3 text-white">
                 Learn more
               </div>
             </Link>
@@ -49,8 +49,8 @@ const Projects: NextPage = () => {
               src={systainableLogo}
               alt="systainable logo"
             />
-            <Link href={`/projects/systainable`}>
-              <div className="m-auto w-fit rounded-full bg-emerald-600 py-1 px-3 text-white">
+            <Link className="m-auto flex w-fit" href={`/projects/systainable`}>
+              <div className="rounded-full bg-emerald-600 py-1 px-3 text-white">
                 Learn more
               </div>
             </Link>
@@ -69,8 +69,8 @@ const Projects: NextPage = () => {
               src={demiGlaceLogo}
               alt="systainable logo"
             />
-            <Link href={`/projects/DemiGlace`}>
-              <div className="m-auto w-fit rounded-full bg-emerald-600 py-1 px-3 text-white">
+            <Link className="m-auto flex w-fit" href={`/projects/DemiGlace`}>
+              <div className="rounded-full bg-emerald-600 py-1 px-3 text-white">
                 Learn more
               </div>
             </Link>
@@ -85,8 +85,8 @@ const Projects: NextPage = () => {
             <div className="m-auto mb-12 flex h-24 w-32 items-center justify-center rounded-md border-2 border-white text-3xl font-bold uppercase tracking-tighter">
               glimps
             </div>
-            <Link href={`/projects/GLIMPS`}>
-              <div className="m-auto w-fit rounded-full bg-emerald-600 py-1 px-3 text-white">
+            <Link className="m-auto flex w-fit" href={`/projects/GLIMPS`}>
+              <div className="rounded-full bg-emerald-600 py-1 px-3 text-white">
                 Learn more
               </div>
             </Link>
