@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                 <span className="text-2xl font-semibold group-hover:underline">
                   Projects
                 </span>
-                <RightOutlined className="rounded-fullp-1 flex items-center text-sm" />
+                <RightOutlined className="flex items-center text-sm" />
               </div>
             </Link>
             <div className="overflow-auto">
