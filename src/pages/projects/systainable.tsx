@@ -1,4 +1,4 @@
-import { GithubOutlined } from "@ant-design/icons";
+import { GithubOutlined, RightOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { type FC } from "react";
@@ -19,9 +19,19 @@ const Systainable: FC = () => {
             </h1>
             <div className="w-full px-8 text-center text-lg font-medium text-zinc-500 sm:text-xl md:max-w-screen-md md:text-2xl xl:text-3xl">
               is a web dashboard for comparing software configurations in
-              mutltiple metrics (performance, energy consumption and memory
-              usage, etc.)
+              performance and sustainability metrics.
             </div>
+            <a
+              className="m-auto flex w-fit"
+              target="_blank"
+              href="https://systainable.herokuapp.com"
+              rel="noreferrer"
+            >
+              <div className="flex items-center gap-x-1 rounded-full bg-emerald-600 py-1 px-3 text-white">
+                Show dashboard
+                <RightOutlined />
+              </div>
+            </a>
           </div>
         </div>
         <div className="m-auto w-full max-w-screen-xl px-8 sm:px-12">
