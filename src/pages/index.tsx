@@ -96,9 +96,10 @@ const Home: NextPage = () => {
             <h2 className="text-2xl font-semibold">Work Experience</h2>
             <ResumeSection cols={12}>
               <SectionEntry
-                timeSpan="05/2022 - present"
+                timeSpan="05/2021 - present"
                 title="Software Engineer, Canida"
                 description={[
+                  "Complete redevelopment of an energy and decarbonization dashboard, >10x request speed on database tables with >100 million rows (React, TypeScript, GraphQL, PostgreSQL, Python)",
                   "Legacy app modernization, reduction of startup time from several minutes to few seconds (React, TypeScript, antd, GraphQL, PostgreSQL)",
                   "Modernization of build processes (Webpack, Create-React-App, Vite, Gatsby)",
                   "Creation of a company-internal component library (React, TailwindCSS, Less)",
@@ -109,7 +110,7 @@ const Home: NextPage = () => {
             </ResumeSection>
             <ResumeSection cols={12}>
               <SectionEntry
-                timeSpan="05/2021 - 04/2022"
+                timeSpan="05/2020 - 04/2021"
                 title="Research Assistant, Chair of Software Systems, Leipzig University"
                 description={[
                   "Development of prototype VR software development environment in Unity (C#) with interactive, visual analysis tools for software (performance, energy consumption etc.)",
@@ -135,7 +136,7 @@ const Home: NextPage = () => {
             <h2 className="text-2xl font-semibold">Education</h2>
             <ResumeSection cols={12}>
               <SectionEntry
-                timeSpan="10/2020 - 10/2022"
+                timeSpan="2020 - 2022"
                 title={
                   <>
                     Leipzig University{" "}
@@ -151,7 +152,7 @@ const Home: NextPage = () => {
             </ResumeSection>
             <ResumeSection cols={12}>
               <SectionEntry
-                timeSpan="10/2015 - 09/2020"
+                timeSpan="2015 - 2020"
                 title={
                   <>
                     Detmold University of Music{" "}
